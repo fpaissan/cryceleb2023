@@ -31,6 +31,7 @@ def download_data(dest="data"):
             filename=file_name,
             local_dir=dest,
             repo_type="dataset",
+            #use_auth_token=""
         )
 
     with zipfile.ZipFile(os.path.join(dest, "audio.zip"), "r") as zip_ref:
